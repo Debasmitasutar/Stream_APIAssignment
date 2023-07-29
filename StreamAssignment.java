@@ -8,9 +8,16 @@ public class StreamAssignment {
         Arrays.stream(intArr)
                 .forEach(System.out::println);
     }
+    public void doubleEachElement(){
+        int[] intArr = {2,30,6,5,0,7,3};
+        Arrays.stream(intArr)
+                .map(element -> element * 2)
+                .forEach(System.out::println);
+    }
     public static void main (String[] args){
         StreamAssignment streamDemoObj = new StreamAssignment();
-        streamDemoObj.forEachElement();
+       // streamDemoObj.forEachElement();
+        streamDemoObj.doubleEachElement();
 
     }
 }
